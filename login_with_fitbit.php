@@ -55,7 +55,9 @@
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
 var obj = jQuery.parseJSON( '<?php echo json_encode($user2); ?>' );
-console.log(obj);
+$.each(obj, function(key, value) {
+    console.log(key, value);
+});
 </script>
 </head>
 <body>
